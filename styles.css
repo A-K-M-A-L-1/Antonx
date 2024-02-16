@@ -1,0 +1,129 @@
+@screen sm {
+  @media (min-width: 480px) {
+    /* Styles for small screens */
+  }
+}
+
+@screen md {
+  @media (min-width: 768px) {
+    /* Styles for medium screens */
+  }
+}
+
+@screen lg {
+  @media (min-width: 976px) {
+    /* Styles for large screens */
+  }
+}
+
+@screen xl {
+  @media (min-width: 1440px) {
+    /* Styles for extra large screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the dropdown button */
+.dropbtn {
+
+    
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top:64px;
+   left: -40px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: inline;
+  }
+  
+  /* Change color of dropdown links on hover */
+
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+ 
+
+  /* Hamburger */
+
+.hamburger{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: red;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
